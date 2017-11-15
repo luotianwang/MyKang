@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/top_title"></include>
+
+    <LinearLayout style="@style/LayoutMessage">
+
+        <TextView
+            style="@style/TextMessage"
+            android:text="姓名：" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            style="@style/EditMessage"
+            android:hint="请输入姓名">
+
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a49191" />
+
+    <LinearLayout style="@style/LayoutMessage">
+
+        <TextView
+            style="@style/TextMessage"
+            android:text="电话：" />
+
+        <EditText
+            android:id="@+id/edt_userphone"
+            style="@style/EditMessage"
+            android:hint="请输入电话"
+            android:inputType="number"
+            android:maxLength="11"></EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a49191" />
+
+    <LinearLayout style="@style/LayoutMessage">
+
+        <TextView
+            style="@style/TextMessage"
+            android:text="工作：" />
+
+        <EditText
+            android:id="@+id/edt_userwork"
+            style="@style/EditMessage"
+            android:hint="请输入工作">
+
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a49191" />
+
+    <LinearLayout style="@style/LayoutMessage">
+
+        <TextView
+            style="@style/TextMessage"
+            android:text="是否邀约：" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_yaoyue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已邀约" />
+
+            <RadioButton
+                android:id="@+id/rb_weiyaoyue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未邀约" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a49191" />
+
+    <LinearLayout style="@style/LayoutMessage">
+
+        <TextView
+            style="@style/TextMessage"
+            android:text="回访时间：" />
+
+        <TextView
+            android:id="@+id/txt_datatime"
+            style="@style/EditMessage"
+            android:gravity="center_vertical"
+            android:hint="请选择时间">
+
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a49191" />
+
+    <LinearLayout style="@style/LayoutMessage">
+
+        <TextView
+            style="@style/TextMessage"
+            android:text="名单备注：" />
+
+        <EditText
+            android:id="@+id/edt_remark"
+            style="@style/EditMessage"
+            android:gravity="center_vertical"
+            android:hint="请选填写">
+
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a49191" />
+
+    <Button
+        android:id="@+id/btn_preserve"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="保存"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</LinearLayout>

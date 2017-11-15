@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/QueryUserLayout">
+
+            <TextView
+                style="@style/QueryUserText"
+                android:text="用户ID：" />
+
+            <TextView
+                android:id="@+id/txt_id"
+                style="@style/QueryUserText"
+                android:text="id" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#333333"></View>
+
+            <TextView
+                style="@style/QueryUserText"
+                android:text="姓名：" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                style="@style/QueryUserText"
+                android:text="张三" />
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#333333"></View>
+            <TextView
+                style="@style/QueryUserText"
+                android:text="工作：" />
+
+            <TextView
+                android:id="@+id/txt_work"
+                style="@style/QueryUserText"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:text="IT行业哈哈哈"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/QueryUserLayout">
+
+            <TextView
+                style="@style/QueryUserText"
+                android:text="手机号：" />
+
+            <TextView
+                style="@style/QueryUserText"
+                android:id="@+id/txt_phone"
+                android:maxLength="11"
+                android:text="13445748371" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#333333"></View>
+            <TextView
+                style="@style/QueryUserText"
+                android:text="是否邀约：" />
+
+            <TextView
+                android:id="@+id/txt_yaoyue"
+                style="@style/QueryUserText"
+                android:text="没邀约" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/QueryUserLayout">
+
+            <TextView
+                style="@style/QueryUserText"
+                android:text="回访时间：" />
+
+            <TextView
+                android:id="@+id/txt_datatime"
+                style="@style/QueryUserText"
+                android:text="13445748371" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/QueryUserLayout">
+
+            <TextView
+                style="@style/QueryUserText"
+                android:text="备注：" />
+
+            <TextView
+                android:id="@+id/txt_remark"
+                style="@style/QueryUserText"
+                android:text="13445748371" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
